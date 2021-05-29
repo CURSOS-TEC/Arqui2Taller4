@@ -2,9 +2,9 @@ LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
 
-LOCAL_MODULE := saxpy_serial
+LOCAL_MODULE := saxpy_parallel
 
-LOCAL_SRC_FILES := saxpy_serial.c 
+LOCAL_SRC_FILES := saxpy_parallel.c 
 
 ifeq ($(TARGET_ARCH_ABI),armeabi-v7a)
     LOCAL_ARM_NEON := true

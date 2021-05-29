@@ -13,6 +13,12 @@ build_saxpy_serial:
 	adb shell /data/local/tmp/saxpy_serial 100
 	adb shell /data/local/tmp/saxpy_serial 10000
 	adb shell /data/local/tmp/saxpy_serial 1000000
+	adb shell /data/local/tmp/saxpy_serial 100000000
+
+run_saxpy_serial:
+	make prepare MODULE=saxpy_serial
+	make build_saxpy_serial
+
 
 build_saxpy_parallel:
 	/opt/android-ndk-r20/ndk-build
@@ -20,3 +26,8 @@ build_saxpy_parallel:
 	adb shell /data/local/tmp/saxpy_parallel 100
 	adb shell /data/local/tmp/saxpy_parallel 10000
 	adb shell /data/local/tmp/saxpy_parallel 1000000
+	adb shell /data/local/tmp/saxpy_parallel 100000000
+
+run_saxpy_parallel:
+	make prepare MODULE=saxpy_parallel
+	make build_saxpy_parallel
