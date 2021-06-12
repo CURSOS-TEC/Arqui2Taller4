@@ -39,7 +39,7 @@ int main(int argc, char *argv[])
             euler = euler + (1 / factorial(i));
     }
     run_time = omp_get_wtime() - start_time;
-    printf("\n euler is %Lf in %f seconds and %d threads\n", euler, run_time, omp_get_num_threads());
+    printf("\n euler is %0.20Lf in %0.20f seconds and %d threads\n", euler, run_time, omp_get_num_threads());
     char *dataToStore = (char *)malloc(100 * sizeof(char));
     long double error = fabsl((long double)REAL_EULER - euler);
     sprintf(dataToStore, "%ld %Lf %lf %.20Lf \n", num_steps, euler, run_time, error);

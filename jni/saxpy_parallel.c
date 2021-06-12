@@ -47,7 +47,7 @@ int main(int argc, char const *argv[])
     }
     run_time = omp_get_wtime() - start_time;
     printf("\033[0;33m");
-    printf("SAXPY PARALLEL %f \n",run_time);
+    printf("SAXPY PARALLEL %.20f \n",run_time);
     printf("\033[0m");
     return 0;
 }

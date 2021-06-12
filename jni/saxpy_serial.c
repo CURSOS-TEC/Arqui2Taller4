@@ -27,7 +27,7 @@ int main(int argc, char const *argv[])
     }
     run_time = omp_get_wtime() - start_time;
     printf("\033[0;34m");
-    printf("SAXPY %f \n",run_time);
+    printf("SAXPY %.20f \n",run_time);
     printf("\033[0m");
     return 0;
 }
