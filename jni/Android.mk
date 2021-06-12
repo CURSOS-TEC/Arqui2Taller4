@@ -2,9 +2,9 @@ LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
 
-LOCAL_MODULE := euler_parallel
+LOCAL_MODULE := alladi-grinstead_serial
 
-LOCAL_SRC_FILES := euler_parallel.c 
+LOCAL_SRC_FILES := alladi-grinstead_serial.c 
 
 ifeq ($(TARGET_ARCH_ABI),armeabi-v7a)
     LOCAL_ARM_NEON := true

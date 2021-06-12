@@ -45,7 +45,7 @@ int main ()
 #pragma omp parallel  
 {
 #pragma omp single
-	  printf(" num_threads = %d",omp_get_num_threads());
+	  printf(" num_threads = %d \n",omp_get_num_threads());
 
 #pragma omp for reduction(+:sum)
 	  for (i=1;i<= num_steps; i++){

@@ -1,4 +1,4 @@
-/home/junavarro/projects/Taller4_NDK/obj/local/armeabi-v7a/objs/cpufeatures/cpu-features.o: \
+/home/junavarro/Documents/Arqui2Taller4/obj/local/armeabi-v7a/objs/cpufeatures/cpu-features.o: \
   /opt/android-ndk-r20/sources/android/cpufeatures/cpu-features.c \
   /opt/android-ndk-r20/sources/android/cpufeatures/cpu-features.h
 

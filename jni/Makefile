@@ -60,3 +60,21 @@ run_euler_parallel:
 
 
 
+build_alladi-grinstead_serial:
+	/opt/android-ndk-r20/ndk-build
+	adb push ../libs/armeabi-v7a/alladi-grinstead_serial /data/local/tmp
+	adb shell /data/local/tmp/alladi-grinstead_serial 1000000000
+
+run_alladi-grinstead_serial:
+	make prepare MODULE=alladi-grinstead_serial
+	make build_alladi-grinstead_serial
+
+
+build_alladi-grinstead_parallel:
+	/opt/android-ndk-r20/ndk-build
+	adb push ../libs/armeabi-v7a/alladi-grinstead_parallel /data/local/tmp
+	adb shell /data/local/tmp/alladi-grinstead_parallel 1000000000
+
+run_alladi-grinstead_parallel:
+	make prepare MODULE=alladi-grinstead_parallel
+	make build_alladi-grinstead_parallel
