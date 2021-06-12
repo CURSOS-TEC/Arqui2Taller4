@@ -73,7 +73,7 @@ run_alladi-grinstead_serial:
 build_alladi-grinstead_parallel:
 	/opt/android-ndk-r20/ndk-build
 	adb push ../libs/armeabi-v7a/alladi-grinstead_parallel /data/local/tmp
-	adb shell /data/local/tmp/alladi-grinstead_parallel 1000000000
+	adb shell /data/local/tmp/alladi-grinstead_parallel 1000000002
 
 run_alladi-grinstead_parallel:
 	make prepare MODULE=alladi-grinstead_parallel
